@@ -9,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Abdul</title>
 </head>
-<body class="bg-dark">
+<body>
+  <img src="./images/land.jpg" class="banner">
     <div>
         <header>
     <nav class="navbar navbar-dark fixed-top">
@@ -20,22 +22,23 @@
           <button class="navbar-toggler my-1 mx-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-top bg-dark container-lg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas offcanvas-top container-fluid" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title mx-1" id="offcanvasNavbarLabel">Wahhaab Web Development</h5>
-              <button type="button" class="btn-close text-reset mx-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close text-reset my-1 mx-5" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" data-bs-dismiss="offcanvas">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Skills</a>
-                  <a class="nav-link" href="#">Testimonials</a>
-                  <a class="nav-link" href="#">My Projects</a>
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link text-dark" href="#About">About</a>
+                  <a class="nav-link text-dark" href="#Skills">Skills</a>
+                  <a class="nav-link text-dark" href="#">Education</a>
+                  <a class="nav-link text-dark" href="#">Testimonials</a>
+                  <a class="nav-link text-dark" href="#">My Projects</a>
+                  <a class="nav-link text-dark" href="#">Contact</a>
                 </li>
               </ul>
               <div class="icon-bar">
@@ -50,68 +53,274 @@
     </header>
     </div>
 
-      <div class="">
-      <div class="landingcont">
-        <img src="./images/land.jpg" class="landpic">
-        <h1 class="title">Hi I'm<br>Abdul Wahhaab Abrahams<br>Aspiring Web Developer</h1>
+      <div class="landingcont container-fluid">
+        <h1 class="animate__animated animate__rollIn">Hi I'm</h1>
+        <h2 class="landname animate__animated animate__rollIn">Abdul Wahhaab Abrahams</h2>
+        <h1 class="animate__animated animate__rollIn">Web Developer</h1>
+        <a href="#About"><button type="button" class="learn btn btn-outline-warning">Learn More</button></a>
       </div>
       </div>
+      <section class="aboutsec" id="About">
+      <div class="about container-lg">
+        <img src="./images/landing pic.png" class="aboutpic">
+        <div>
+        <h2>About Abdul Wahhaab</h2>
+        <p>I am an aspiring fullstack Web Developer, I enjoy helping out wherever and sharing the knowledge that i've gained as well as take in new information and learn more.</p>
+        <p>When I am not in front of the computer coding, I spend my time playing basketball🏀 working out at the gym🏋️‍♂️playing games with my friends🎮and spending time with my family👪.</p>
+      </div>
+    </section>
 
+    <section class="skillsec">
+      <div class="Skills container-lg" id="Skills">
+        <h1>Skill Set</h1>
+        <div class="row htmlpro">
+          <div class="col-1">
+            <img src="./images/html png.png" height="80px" width="85px">
+          </div>
+          <div class="col">
+            <div class="htmlprogress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated htmlbar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="row csspro">
+          <div class="col-1">
+            <img src="./images/css.png" height="80px" width="85px">
+          </div>
+          <div class="col">
+            <div class="cssprogress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated cssbar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%">66%
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row bootpro">
+          <div class="col-1">
+            <img src="./images/bootstrap.png" height="80px" width="85px">
+          </div>
+          <div class="col">
+            <div class="bootprogress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bootbar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">55%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <section class="aboutsec container-lg">
+        <h1 class="contact" id="contact">Contact Us</h1>
+        <form action="https://formspree.io/f/xzbwjdvo" method="POST" class="form">
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" name="name" placeholder="First name" aria-label="First name" required>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" name="lastname" placeholder="Last name" aria-label="Last name" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Your Email" required>
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+          
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Enter Message Here" required></textarea>
+              </div>
+            
+            <button type="submit" class="btn btn-dark" name="submit">Submit</button>
+          </form>
+    </section>
+
+    <section class="footsersec container-lg">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 mx-5 d-flex align-items-center">
+          <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <span class="text-muted"><img src="./images/wahhaab-web-development-high-resolution-logo-white-on-transparent-background.png" width="70px" height="40px"></span>
+          </a>
+          
+        </div>
+    
+        <div class="footer-bar mx-5">
+          <a href="https://www.instagram.com/abdul_abrahams_/"><i class="fa fa-instagram"></i></a> 
+          <a href="#"><i class="fa fa-linkedin"></i></a> 
+          <a href="https://github.com/AbdulAbrahams"><i class="fa fa-github"></i></a>
+        </div>
+      </footer>
+    </section>
 
     <style>
       *{
         font-family: 'Kanit', sans-serif;
       }
+      html{
+        scroll-behavior: smooth;
+      }
         body{
+          background-color: #000022;
             margin: 0;
             padding: 0;
         }
         .navbar{
           width: 100%;
-            background: transparent;
+          background: transparent;
+          padding-left: 1%;
         }
         .navbar-brand{
           font-weight: 700;
         }
+        .nav-link:hover{
+        color: rgb(223, 214, 214) !important;
+      }
         .logo{
-          width: 8%;
+          width: 10%;
         }
         .navbar-toggler{
           box-shadow: 0px 0px 2px 2px white;
         }
         .offcanvas{
-          height: 50%;
+          background-color: #b95208;
+          height: 60%;
           transition: 0.6s;
         }
         .offcanvas-title{
-          color: white;
+          color: #000022;
+          font-size: 3vh;
+          font-weight: 900;
         }
-        .btn-close{
-          width: 3%;
-          background-color: white;
-        }
+
         .icon-bar{
           padding-top: 1%;
         }
         .icon-bar a{
+          color: #000022;
           padding: 0.5%;
+          font-size: 25px;
         }
-        
-        .landingcont{
-            padding: 0px 0px;
+        .icon-bar a:hover{
+          color: rgb(223, 214, 214)
         }
-        .landpic{
+        .banner{
           position: absolute;
-          opacity: 75%;
           width: 100%;
-          height: auto;
+          height: 100vh;
+          opacity: 85%;
+        }
+        .landingcont{
+          opacity: 85%;
+          padding-top: 30%;
+          animation-duration: 10s;
         }
         .landingcont h1{
           font-family: 'Kanit', sans-serif;
           position: relative;
-          padding-top: 35%;
-          padding-left: 5%;
+          margin-left: 5%;
+          color: #FDFFFC;
+        }
+        .landname{
+          position: relative;
+          margin-left: 5%;
+          color: #FF9F1C;
+          font-size: 60px;
+          font-weight: 900;
+        }
+        .learn{
+          /* margin-bottom: 2.5%; */
+          margin-top: 2%;
+          width: 10%;
+          margin-left: 5%;
+          position: relative;
+          animation-name: learn;
+          animation-duration: 4s;
+          animation-delay: 2s;
+        }
+        @keyframes learn {
+        0%   {left:0px; top:0px;}
+        25%  {left:400px; top:0px;}
+        100% {left:0px; top:0px;}
+}
+        .aboutsec{
+          margin-top: 20%;
+          margin-bottom: 10%;
+        }
+        .skillsec{
+          margin-top: 10%;
+          margin-bottom: 10%;
+        }
+        .about{
+          /* padding-bottom: 5%; */
+          /* padding-top: 1%; */
+          position: relative;
+          display: flex;
           color: white;
+        }
+        .aboutpic{
+          /* margin-top: 10%; */
+          padding-right: 3%;
+          min-height: 10vh;
+          max-height: 60vh;
+          border-radius: 10%;
+        }
+        .about h2{
+          color: #FF9F1C;
+          /* margin-top: 15%; */
+          font-weight: 900;
+          padding: 8%;
+        }
+        .about p{
+          padding-left: 8%;
+        }
+        .Skills h1{
+          color: #FF9F1C;
+          font-weight: 900;
+          padding-left: 3%;
+          font-size: 10vh;
+          padding-bottom: 5%;
+        }
+        .Skills{
+          padding-left: 9%;
+        }
+        .htmlprogress{
+          padding-top: 2%;
+        }
+        .htmlbar{
+          background-color: #b95208;
+          border-radius: 20px;
+        }
+        .csspro{
+          padding-top: 5%;
+        }
+        .cssprogress{
+          padding-top: 2%;
+        }
+        .cssbar{
+          background-color: #077dac;
+          border-radius: 20px;
+        }
+        .bootpro{
+          padding-top: 5%;
+        }
+        .bootprogress{
+          padding-top: 2%;
+        }
+        .bootbar{
+          background-color: #2b0870;
+          border-radius: 20px;
+        }
+        .footer-bar{
+          font-size: 25px;
+        }
+        .footer-bar a{
+          color: aliceblue;
+        }
+        .footer-bar a:hover{
+          color:#FF9F1C;
         }
     </style>
 
