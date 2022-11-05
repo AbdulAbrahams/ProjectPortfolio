@@ -113,11 +113,11 @@ body{
             font-size: 30px;
           }
           .learnbtn{
-            animation-name: learn;
+            animation-name: learnbtn;
             animation-duration: 4s;
             animation-delay: 2s;
           }
-          @keyframes learn {
+          @keyframes learnbtn {
           0%   {left:0px; top:0px;}
           25%  {left:400px; top:0px;}
           100% {left:0px; top:0px;}
@@ -144,15 +144,7 @@ body{
             color: aliceblue;
             padding-left: 8%;
           }
-          /* .Skills{
-            display: block !important;
-            margin: auto;
-          }
-          .skills.row{
-            margin: auto;
-          } */
           .circle-wrap {
-            /* margin: 150px auto; */
             width: 150px;
             height: 150px;
             background: #fefcff00;
@@ -243,6 +235,8 @@ body{
       }
       .progress.css .progress-left .progress-bar{
           animation: loading-4 1.5s linear forwards 1.8s;
+          
+
       }
 
       .progress.boot .progress-bar{
@@ -310,6 +304,9 @@ body{
             display: block !important;
             color: #FF9F1C;
           }
+          #Education{
+            overflow: hidden;
+          }
           .rosebank{
             float: right;
           }
@@ -321,6 +318,7 @@ body{
              align-items: center;
             width: 100%;
             color: #FF9F1C;
+            overflow: hidden;
           }
 
           .testimonials h3{
@@ -366,6 +364,11 @@ body{
             color:#FF9F1C;
           }
 
+          .btn-group{
+            color: #b95208;
+          }
+          
+
           @media screen and (width <= 4000px) {
             .container{
                 flex-flow: column wrap;
@@ -377,13 +380,69 @@ body{
               max-width: 60vh;
               max-height: 60vh;
             }
+            .testhead{
+              padding-top: 10%;
+              font-size: 80px;
+            }
+
+            .eduhead{
+              font-size: 80px;
+            }
+            .projecthead{
+              font-size: 80px;
+            }
           }
              @media screen and (width <= 500px) {
             .aboutsec{
               flex-direction: column;
+              padding-top: 110%;
             }
             .aboutpic{
               max-width: 50vh;
               max-height: 50vh;
+            }
+            .Skills{
+              padding-top: 110%;
+            }
+
+            .rosetext{
+              padding-top: 70%;
+            }
+            .testimonials{
+              flex-direction: column;
+            }
+            .testhead{
+              padding-top: 10%;
+              font-size: 40px;
+            }
+
+            .eduhead{
+              font-size: 40px !important;
+            }
+            .projecthead{
+              font-size: 40px;
+            }
+
+            .Skills .row{
+              flex-direction: column;
+              align-items: center;
+              padding-right: 35%;
+            }
+
+            .education h1{
+              font-size: large;
+            }
+            footer{
+              display: flex;
+            }
+
+            .rosepng{
+              width: 35vh !important;
+              height: 14vh !important;
+            }
+
+            .lifepng{
+              width: 45vh !important;
+              height: 22vh !important;
             }
         }

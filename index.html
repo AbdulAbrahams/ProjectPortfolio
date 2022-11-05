@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Wahhaab Web Development</title>
 </head>
 <body>
@@ -54,18 +55,18 @@
     <section class="landing">
       <div class="landingcont" style="background-image: url('./images/land.jpg'); opacity: 85%;">
         <div class="landtext mx-5">
-      <h1 class="animate__animated animate__rollIn">Hi I'm</h1>
-      <h2 class="landname animate__animated animate__rollIn">Abdul Wahhaab Abrahams</h2>
-      <h1 class="animate__animated animate__rollIn">Fullstack Web Developer</h1>
+      <h1 class="animate__animated animate__rollIn animate__delay-1s">Hi I'm</h1>
+      <h2 class="landname animate__animated animate__rollIn animate__delay-1s">Abdul Wahhaab Abrahams</h2>
+      <h1 class="animate__animated animate__rollIn animate__delay-1s">Fullstack Web Developer</h1>
       <a href="#About"><button type="button" class="learnbtn btn btn-outline-warning">Learn About Me</button></a>
       </div>
     </div>
     </section>
-    <section class="aboutsec container-lg" id="About">
+    <section class="aboutsec container-lg" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-sine" id="About">
       <img src="./images/landing pic.png" class="aboutpic" style="max-width: 60vh; max-height: 60vh;">
       <div>
       <h2>About Abdul Wahhaab</h2>
-      <p>I am an aspiring fullstack Web Developer, I enjoy helping out wherever and sharing the knowledge that i've gained as well as take in new information and learn more.</p>
+      <p>Hi! I am Abdul Wahhaab Abrahams, but you can call me Wahhaab. I'm an aspiring fullstack Web Developer that enjoys helping out wherever I can and sharing the knowledge that i've gained as well as take in new information and learn more. I'm a bit of a perfectionist at times and try to recreate things exactly as I envisioned it, but i see that as a strength and not a weakness.</p>
       <p>When I am not in front of the computer coding, I spend my time playing basketball🏀 working out at the gym🏋️‍♂️playing games with my friends🎮and spending time with my family👪.</p>
     </div>
   </section>
@@ -73,10 +74,10 @@
       <h1 style="font-size: 10vh; font-weight:900; padding-left:8%; padding-bottom: 6%; color: #FF9F1C;">Skills</h1>
       <div class="container-lg">
         <div class="row">
-            <div class="col-4" style="align-items: center;">
+            <div class="col-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" style="align-items: center;">
                 <div class="progress html">
                     <span class="progress-left">
-                      <span class="progress-bar"></span>
+                      <span class="progress-bar" data-aos="span"></span>
                     </span>
                     <span class="progress-right">
                         <span class="progress-bar"></span>
@@ -86,7 +87,7 @@
                 <h4 style="padding-left: 43%; padding-top:3%; color: #FF9F1C;">HTML</h4>
                 <h4 style="padding-left: 45%; color:aliceblue;">65%</h4>
             </div>
-            <div class="col-4" style="align-items: center;">
+            <div class="col-4" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" style="align-items: center;">
               <div class="progress css">
                   <span class="progress-left">
                     <span class="progress-bar"></span>
@@ -99,7 +100,7 @@
               <h4 style="padding-left: 45%; padding-top:3%; color: #FF9F1C;">CSS</h4>
               <h4 style="padding-left: 45%; color:aliceblue;">58%</h4>
           </div>
-          <div class="col-4" style="align-items: center;">
+          <div class="col-4" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" style="align-items: center;">
             <div class="progress boot">
                 <span class="progress-left">
                   <span class="progress-bar"></span>
@@ -116,52 +117,54 @@
     </section>
 
     <section id="Education" class="education container">
-      <h1 style="font-size: 10vh; font-weight:900; padding-left:8%; padding-bottom: 6%;">Education</h1>
-      <div class="row" style="padding-bottom: 5%;">
+      <h1 class="eduhead" style="font-weight:900; padding-left:8%; padding-bottom: 6%;">Education</h1>
+      <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="padding-bottom: 5%;">
         <div class="col-6">
       <h4>September 2022 - Present</h4>
       <h2>Life Choices Coding Academy</h2>
-      <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque recusandae aliquid quidem, aperiam debitis praesentium dolores non est doloremque sint quisquam laudantium numquam nisi minus totam quos facere ab nostrum?</P>
-        </div>
-        <img src="./images/LIFE-CHOICES-ACADEMY-LOGO-ON-BLUE-removebg-preview.png" alt="LC Academy" class="__web-inspector-hide-shortcut__" style="width: 70vh; height: 30vh; padding-left: 5%;">
-      </div>
-      <div class="row" style="padding-left: 8%;">
-        <div class="col-6 rosebank">
-          <img src="./images/rc-logo.png" style="width: 40vh; height: 20vh;">
+      <P>I am currently learning coding and web development at 'Life Choices Coding Academy' to become a fullstack web developer and learning things that would have taken me ages to learn at rosebank such as HTML, CSS and Bootstrap. Learning at Life Choices has dramatically changed my work ethic for the better.</P>
         </div>
         <div class="col">
+        <img src="./images/LIFE-CHOICES-ACADEMY-LOGO-ON-BLUE-removebg-preview.png" alt="LC Academy" class="__web-inspector-hide-shortcut__ lifepng" style="width: 50vh; height: 25vh;">
+      </div>
+      </div>
+      <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="padding-left: 8%;">
+        <div class="col-6 rosebank">
+          <img src="./images/rc-logo.png" style="width: 40vh; height: 20vh;" class="rosepng">
+        </div>
+        <div class="col rosetext">
     <h4>January 2022 - August 2022</h4>
       <h2>Rosebank College</h2>
       <p>Studied bachelor's Degree in I.T. at Rosebank College but left due to the fact that I wasn't learning much and when i heard back from life choices i made my decision to leave.</p>
         </div>
       </div>
-      <div class="row" style="padding-top: 5%; padding-left: 8%;">
+      <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+       style="padding-top: 5%; padding-left: 8%;">
         <div class="col-6">
           <h4>2015 - 2019</h4>
           <h2>Muizenberg High School</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, non. Unde provident minus voluptatibus, magni rem fuga repellat accusamus voluptatum iure tempore voluptas dolor debitis illo illum dolore praesentium nam.</p>
+          <p>I matriculated at Muizenberg High School in 2019 with a bachelor's pass. My subjects were pure Maths, Physics, Business Studies, Music, English, Afrikaans and Life Orientation.</p>
           </div>
           <div class="col" style="padding-left: 8%;">
           <img src="./images/1940005_1389649074636868_537002596_n.png">
           </div>
     </section>
     <section class="testimonials container-lg" id="Testimonials">
-      <h1 style="font-size: 10vh; font-weight:900; padding-left:8%; padding-bottom: 6%;">Testimonials</h1>
+      <h1 class="testhead" style=" font-weight:900; padding-left:8%; padding-bottom: 6%;">Testimonials</h1>
       <div class="row mb-2">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <h3 class="mb-0">Jia Daniels</h3>
+              <h3 class="mb-0 animate__fadeInLeft">Jia Daniels</h3>
               <div class="mb-1 text-muted">Colleague/Frontend Developer</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="stretched-link">Continue reading</a>
+              <p class="card-text mb-auto" style="font-size: 13px;">"Abdul is a very productive and efficient person. He takes pride in his work and works very well in teams as well as alone. His understanding and comprehensiveness is exceptional. He is trustworthy and loyal and would be a great addition to any company."</p>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="./images/IMG_9927.JPG" width="200" height="200">
+              <img src="./images/IMG_9927.JPG" width="200" height="208">
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0">Abdul Azeez Kemp</h3>
@@ -169,14 +172,14 @@
               <p class="mb-auto" style="font-size: 15px;">"An absolute great guy, hard worker and a goal driven personality. Always takes on the next challenge that comes to him and knows how to communicate and socialise in his surroundings."</p>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="./images/Screenshot_20221101_100639_edit_159098746871600.jpg" width="220" height="200">
+              <img src="./images/Screenshot_20221101_100639_edit_159098746871600.jpg" width="220" height="208">
             </div>
           </div>
         </div>
       </div>
 
       <div class="row mb-2">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0">Aneeqa Brown</h3>
@@ -184,11 +187,11 @@
               <p class="card-text mb-auto" style="font-size: 13px;">"Abdul Wahhaab is a highly thought intellectual. His hardworking, creative but ambitious to recreate his vision exactly. He always provide a helping hand. He has great communication and leadership skills that a company needs."</p>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="./images/1667550652724.jpg" width="220" height="200">
+              <img src="./images/1667550652724.jpg" width="220" height="208">
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0">Jake Jansen</h3>
@@ -198,14 +201,14 @@
                 of others. He is also very driven to be the best of his caliber."</p>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="./images/me.jpg" width="220" height="200">
+              <img src="./images/me.jpg" width="220" height="208">
             </div>
           </div>
         </div>
       </div>
 
       <div class="row mb-2">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0">Savannah Samuels</h3>
@@ -213,11 +216,11 @@
               <p class="card-text mb-auto" style="font-size: 14px;">"Abdul always strives to learn new things to help him in the future and his always available to help and teach other individuals. Always looks on the bright side of things and is always positive in any situation."</p>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="./images/IMG_20220904_134609_306.jpg" width="220" height="200">
+              <img src="./images/IMG_20220904_134609_306.jpg" width="220" height="208">
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <h3 class="mb-0">Mu'eed Brown</h3>
@@ -225,15 +228,15 @@
               <p class="mb-auto" style="font-size: 14px;">"Abdul is a very ambitious person who is not afraid to work towards achieving his goals. He is also very creative with his work. He is one of the most creative developers around. Abdul won't be afraid to assist those in need."</p>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="./images/my-image.jpg" width="220" height="200">
+              <img src="./images/my-image.jpg" width="220" height="208">
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="projects container-lg" id="Projects" style="padding-top: 5%;">
-      <h1 style="font-size: 10vh; font-weight:900; padding-left:8%; padding-bottom: 6%;">My Projects</h1>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <h1 class="projecthead" style="font-weight:900; padding-left:8%; padding-bottom: 6%;">My Projects</h1>
+      <div id="carouselExampleCaptions" data-aos="fade" data-aos-offset="300" data-aos-easing="ease-in-sine" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -245,8 +248,8 @@
             <div class="carousel-caption d-none d-md-block">
               <h5 style="color: #FF9F1C; font-size: 6vh;">Exclusive Kicks E-commerce store</h5>
               <div class="btn-group">
-                <a href="https://exclusivekicks.netlify.app/"><button type="button" class="btn btn-md btn-primary">Live</button></a>
-                <a href="https://github.com/AbdulAbrahams/exclusive-kicks"><button type="button" class="btn btn- btn-primary">Github</button></a>
+                <a href="https://exclusivekicks.netlify.app/"><button type="button" class="btn btn-md btn-warning">Live</button></a>
+                <a href="https://github.com/AbdulAbrahams/exclusive-kicks"><button type="button" class="btn btn- btn-warning">Github</button></a>
                 
               </div>
             </div>
@@ -256,8 +259,8 @@
             <div class="carousel-caption d-none d-md-block">
               <h5 style="color: whitesmoke; font-size: 6vh;">Saitama vs Goku Comic</h5>
               <div class="btn-group">
-                <a href="https://saitamavsgoku.netlify.app/"><button type="button" class="btn btn-md btn-primary">Live</button></a>
-                <a href="https://github.com/AbdulAbrahams/comic"><button type="button" class="btn btn- btn-primary">Github</button></a>
+                <a href="https://saitamavsgoku.netlify.app/"><button type="button" class="btn btn-md btn-warning">Live</button></a>
+                <a href="https://github.com/AbdulAbrahams/comic"><button type="button" class="btn btn- btn-warning">Github</button></a>
               </div>
             </div>
           </div>
@@ -266,8 +269,8 @@
             <div class="carousel-caption d-none d-md-block">
               <h5 style="color: red; font-size: 6vh;">Old Portfolio</h5>
                 <div class="btn-group">
-                  <a href="https://abdulabrahams.netlify.app/#"><button type="button" class="btn btn-md btn-primary">Live</button></a>
-                  <a href="https://github.com/AbdulAbrahams/Portfolio"><button type="button" class="btn btn- btn-primary">Github</button></a>
+                  <a href="https://abdulabrahams.netlify.app/#"><button type="button" class="btn btn-md btn-warning">Live</button></a>
+                  <a href="https://github.com/AbdulAbrahams/Portfolio"><button type="button" class="btn btn- btn-warning">Github</button></a>
               </div>
             </div>
           </div>
@@ -324,6 +327,8 @@
 
   </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>   
 </body>
 </html>
